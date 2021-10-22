@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/web/static/css/main.0ccb6c13.chunk.css",
-    "main.js": "/web/static/js/main.d261a762.chunk.js",
-    "main.js.map": "/web/static/js/main.d261a762.chunk.js.map",
-    "runtime-main.js": "/web/static/js/runtime-main.8a5d633d.js",
-    "runtime-main.js.map": "/web/static/js/runtime-main.8a5d633d.js.map",
-    "static/js/2.90031277.chunk.js": "/web/static/js/2.90031277.chunk.js",
-    "static/js/2.90031277.chunk.js.map": "/web/static/js/2.90031277.chunk.js.map",
-    "index.html": "/web/index.html",
-    "static/css/main.0ccb6c13.chunk.css.map": "/web/static/css/main.0ccb6c13.chunk.css.map",
-    "static/js/2.90031277.chunk.js.LICENSE.txt": "/web/static/js/2.90031277.chunk.js.LICENSE.txt",
-    "static/media/logo-home.3d3de675.png": "/web/static/media/logo-home.3d3de675.png",
-    "static/media/mail.1fceffb1.png": "/web/static/media/mail.1fceffb1.png",
-    "static/media/right.2d0eee13.png": "/web/static/media/right.2d0eee13.png",
-    "static/media/whatsapp.25e6e9c5.png": "/web/static/media/whatsapp.25e6e9c5.png"
+    "main.css": "/static/css/main.0ccb6c13.chunk.css",
+    "main.js": "/static/js/main.d261a762.chunk.js",
+    "main.js.map": "/static/js/main.d261a762.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.1adcf35b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.1adcf35b.js.map",
+    "static/js/2.90031277.chunk.js": "/static/js/2.90031277.chunk.js",
+    "static/js/2.90031277.chunk.js.map": "/static/js/2.90031277.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.0ccb6c13.chunk.css.map": "/static/css/main.0ccb6c13.chunk.css.map",
+    "static/js/2.90031277.chunk.js.LICENSE.txt": "/static/js/2.90031277.chunk.js.LICENSE.txt",
+    "static/media/logo-home.3d3de675.png": "/static/media/logo-home.3d3de675.png",
+    "static/media/mail.1fceffb1.png": "/static/media/mail.1fceffb1.png",
+    "static/media/right.2d0eee13.png": "/static/media/right.2d0eee13.png",
+    "static/media/whatsapp.25e6e9c5.png": "/static/media/whatsapp.25e6e9c5.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.8a5d633d.js",
+    "static/js/runtime-main.1adcf35b.js",
     "static/js/2.90031277.chunk.js",
     "static/css/main.0ccb6c13.chunk.css",
     "static/js/main.d261a762.chunk.js"
