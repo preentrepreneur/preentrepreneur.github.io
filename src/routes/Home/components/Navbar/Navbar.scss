@@ -1,0 +1,21 @@
+.Navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 40px 0 20px;
+  height: 80px;
+  border-bottom: 1px solid #e5e5e5;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+
+  &__Button {
+    padding: 10px 20px;
+    border: 1px solid black;
+    height: fit-content;
+    border-radius: 3px;
+  }
+}

@@ -1,0 +1,26 @@
+.WhoAreWe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 80px auto;
+  &__Logo {
+    margin: 0;
+  }
+
+  &__Text {
+    align-self: flex-start;
+    margin: 10px 0 0 90px;
+    text-align: left;
+
+    &--heading {
+      font-weight: bold;
+      color: #333333;
+      font-size: 48px;
+    }
+
+    &--text {
+      margin: 20px 0 0 0;
+      width: 600px;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.Home {
+  &__Title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333333;
+  }
+  &__Pointers {
+    margin: 0 auto;
+    font-size: 16px;
+    width: 60%;
+    // border: 1px solid red;
+
+    &--pointer {
+      display: flex;
+      align-items: center;
+      text-align: left;
+      font-size: 20px;
+      margin: 40px 0;
+      //   border: 1px solid grey;
+
+      & > div {
+        // border: 1px solid grey;
+      }
+    }
+  }
+}
