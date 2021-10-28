@@ -5,12 +5,16 @@
   margin: 80px auto;
   &__Logo {
     margin: 0;
+    animation-name: slideInRight;
+    animation-duration: 1s;
   }
 
   &__Text {
     align-self: flex-start;
-    margin: 10px 0 0 90px;
+    margin: 20px 0 0 90px;
     text-align: left;
+    animation-name: slideInLeft;
+    animation-duration: 1s;
 
     &--heading {
       font-weight: bold;
@@ -19,8 +23,38 @@
     }
 
     &--text {
-      margin: 20px 0 0 0;
+      margin: 30px 0 0 0;
       width: 600px;
+      font-size: 16px;
+      font-weight: 500;
     }
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translate(-200px);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translate(200px);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
   }
 }

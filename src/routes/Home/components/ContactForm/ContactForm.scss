@@ -1,0 +1,17 @@
+.Contact {
+  &__Row1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__Submit {
+    color: white;
+    background: #4e64c8;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin: 0px auto 10px 0;
+    width: fit-content;
+    cursor: pointer;
+  }
+}

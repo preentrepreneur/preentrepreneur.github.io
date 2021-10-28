@@ -3,6 +3,8 @@
     font-size: 32px;
     font-weight: bold;
     color: #333333;
+    animation-name: slideInTop;
+    animation-duration: 2s;
   }
   &__Pointers {
     margin: 0 auto;
@@ -16,11 +18,116 @@
       text-align: left;
       font-size: 20px;
       margin: 40px 0;
-      //   border: 1px solid grey;
-
-      & > div {
-        // border: 1px solid grey;
-      }
     }
+  }
+
+  &__Lack {
+    margin: 50px auto 20px auto;
+    width: 80%;
+    font-weight: 600;
+    font-size: 18px;
+
+    &--change {
+      margin-top: 20px;
+      font-size: 20px;
+    }
+  }
+
+  &__Learn {
+    margin: 60px 0 40px 0;
+    color: #4e64c8;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+#pointer1 {
+  animation: slideTop1 3s;
+}
+
+#pointer2 {
+  animation: slideTop2 3s;
+}
+
+#pointer3 {
+  animation: slideTop3 3s;
+}
+
+#pointer4 {
+  animation: slideTop4 3s;
+}
+
+@keyframes slideInTop {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideTop1 {
+  0% {
+    transform: translateY(-300px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-300px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideTop2 {
+  0% {
+    transform: translateY(-400px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-400px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideTop3 {
+  0% {
+    transform: translateY(-500px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-500px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideTop4 {
+  0% {
+    transform: translateY(-600px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-600px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
