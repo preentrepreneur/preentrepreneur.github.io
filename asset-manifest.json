@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.31075e2d.chunk.css",
+    "main.css": "/static/css/main.1da618a0.chunk.css",
     "main.js": "/static/js/main.5c58fee4.chunk.js",
     "main.js.map": "/static/js/main.5c58fee4.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.1adcf35b.js",
@@ -10,7 +10,7 @@
     "static/js/2.507a3286.chunk.js.map": "/static/js/2.507a3286.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.649165d2.chunk.css.map": "/static/css/2.649165d2.chunk.css.map",
-    "static/css/main.31075e2d.chunk.css.map": "/static/css/main.31075e2d.chunk.css.map",
+    "static/css/main.1da618a0.chunk.css.map": "/static/css/main.1da618a0.chunk.css.map",
     "static/js/2.507a3286.chunk.js.LICENSE.txt": "/static/js/2.507a3286.chunk.js.LICENSE.txt",
     "static/media/bharat.39349eff.jpeg": "/static/media/bharat.39349eff.jpeg",
     "static/media/semantic.min.css": "/static/media/outline-icons.ddae9b1b.woff",
@@ -31,7 +31,7 @@
     "static/js/runtime-main.1adcf35b.js",
     "static/css/2.649165d2.chunk.css",
     "static/js/2.507a3286.chunk.js",
-    "static/css/main.31075e2d.chunk.css",
+    "static/css/main.1da618a0.chunk.css",
     "static/js/main.5c58fee4.chunk.js"
   ]
 }
