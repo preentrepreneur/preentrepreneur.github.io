@@ -1,0 +1,59 @@
+.Advisors {
+  height: fit-content;
+  width: 60%;
+  margin: 70px auto 120px auto;
+  border: 5px solid rgba(46, 152, 172, 1);
+  border-radius: 50px 0 50px 0;
+  padding: 50px;
+  transition: all 500ms;
+
+  &__Image {
+    border-radius: 200px;
+    border: 5px solid black;
+  }
+  &:hover {
+    border: 5px solid rgba(78, 36, 147, 1);
+  }
+
+  &--Advisor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  &--Info {
+    margin: 0 0 0 50px;
+    // border: 1px solid red;
+
+    &--name {
+      font-size: 20px;
+      margin: 10px 0;
+      // border: 1px solid black;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Advisors {
+    padding: 30px 0;
+    width: 80vw;
+    margin: 50px auto;
+
+    &__Image {
+      height: 150px;
+      width: auto;
+    }
+    &--Advisor {
+      flex-direction: column;
+      width: fit-content;
+    }
+
+    &--Info {
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+}

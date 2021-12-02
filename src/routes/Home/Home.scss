@@ -1,4 +1,26 @@
 .Home {
+  &__Begin {
+    padding: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    width: fit-content;
+    margin: 30px auto 0 auto;
+
+    color: rgb(31, 157, 182);
+    transition: color 500ms;
+    border: 2px solid rgba(0, 0, 0, 0.521);
+    border-radius: 4px;
+
+    animation: gradient 4s infinite;
+
+    &:hover {
+      color: rgb(110, 45, 214);
+    }
+
+    &__Buttons {
+      margin-top: 20px;
+    }
+  }
   &__Title {
     font-size: 32px;
     font-weight: bold;
@@ -16,16 +38,25 @@
       display: flex;
       align-items: center;
       text-align: left;
-      font-size: 20px;
+      font-size: 19px;
       margin: 40px 0;
+
+      & > img {
+        transition: all;
+        transition-duration: 500ms;
+        &:hover {
+          transform: rotate(360deg);
+        }
+      }
     }
   }
 
   &__Lack {
-    margin: 50px auto 20px auto;
+    margin: 80px auto 20px auto;
     width: 80%;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 120%;
 
     &--change {
       margin-top: 20px;
@@ -34,27 +65,43 @@
   }
 
   &__Learn {
-    margin: 60px 0 40px 0;
-    color: #4e64c8;
+    margin: 60px auto 40px auto;
+    width: fit-content;
+    color: #f65354;
     font-weight: bold;
     cursor: pointer;
+    font-size: 16px;
+    transition: all;
+    transition-duration: 200ms;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Home {
+    &__Learn {
+      width: 80vw;
+    }
   }
 }
 
 #pointer1 {
-  animation: slideTop1 3s;
+  animation: left 2s;
 }
 
 #pointer2 {
-  animation: slideTop2 3s;
+  animation: left 2.5s;
 }
 
 #pointer3 {
-  animation: slideTop3 3s;
+  animation: left 3s;
 }
 
 #pointer4 {
-  animation: slideTop4 3s;
+  animation: left 3.5s;
 }
 
 @keyframes slideInTop {
@@ -128,6 +175,21 @@
   }
   100% {
     transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes left {
+  0% {
+    transform: translateX(-600px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(-600px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
     opacity: 1;
   }
 }

@@ -2,7 +2,11 @@
   &__Row1 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
+
+    & > div {
+      width: 40%;
+    }
   }
 
   &__Submit {
@@ -13,5 +17,18 @@
     margin: 0px auto 10px 0;
     width: fit-content;
     cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Contact {
+    &__Row1 {
+      flex-direction: column;
+
+      // & > div {
+      //   width: 80vw;
+      //   margin: 5px 0;
+      // }
+    }
   }
 }

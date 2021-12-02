@@ -11,10 +11,31 @@ body {
   src: url(./resources/fonts/oxygen.ttf);
 }
 
+@font-face {
+  font-family: "Stem";
+  src: url(./resources/fonts/stem.otf);
+}
+
 code {
   font-family: "Oxygen", monospace;
 }
 
 * {
   box-sizing: border-box;
+  font-family: "Stem", sans-serif;
+}
+
+@keyframes gradient {
+  0% {
+    color: rgb(35, 118, 134);
+  }
+  25% {
+    color: rgb(49, 66, 141);
+  }
+  50% {
+    color: rgb(61, 28, 114);
+  }
+  100% {
+    color: rgb(35, 118, 134);
+  }
 }
