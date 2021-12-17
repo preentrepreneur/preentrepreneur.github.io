@@ -7,7 +7,7 @@ function JoinUs(props) {
     return (
         <>
             <div className='JoinUs__Title'>
-                        Join us on this transformational jourey!
+                        Join us on this transformational journey!
             </div>
             <div className='JoinUs__Pointers'>
                 <div className='JoinUs__Pointers--pointer' id="pointer1">
@@ -26,7 +26,7 @@ function JoinUs(props) {
                 <div className='JoinUs__Pointers--pointer' id="pointer3">
                     <img className='JoinUs__PointerImg' src={right} alt="right" height="25px" width="25px" style={{marginRight:"25px"}}/>
                     <div>
-                        We will get you in touch with high energy startups that need highly motivated individials as yourself to create a strong team which will turn their ideas into reality.  
+                        We will get you in touch with high energy startups that need highly motivated individuals as yourself to create a strong team which will turn their ideas into reality.  
                     </div>
                 </div>       
                 <div className='JoinUs__Pointers--pointer' id="pointer4">
