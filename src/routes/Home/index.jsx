@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import { Modal } from 'semantic-ui-react'
-import { Button } from 'primereact/button'
-import { Tooltip } from 'primereact/tooltip'
+// import { Modal } from 'semantic-ui-react'
+// import { Button } from 'primereact/button'
+// import { Tooltip } from 'primereact/tooltip'
 import { withRouter } from 'react-router-dom'
 
 import Navbar from './components/Navbar'
@@ -46,7 +46,7 @@ export class Home extends Component {
             <Navbar toggleContactForm={this.toggleContactForm}/>
             <div className='Home' id="Home">
 
-                <div className='Home__Begin'>
+                {/* <div className='Home__Begin'>
                     Begin Your Journey
 
                     <div className='Home__Begin__Buttons'>
@@ -66,7 +66,7 @@ export class Home extends Component {
                         />  
                     </div>
                     
-                </div>
+                </div> */}
                 <WhoAreWe/>
 
                 <JoinUs/>
