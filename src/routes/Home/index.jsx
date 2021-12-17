@@ -1,14 +1,17 @@
 import React, { Component } from 'react'
-import { Modal } from 'semantic-ui-react'
-import { Button } from 'primereact/button'
-import { Tooltip } from 'primereact/tooltip'
+import { connect } from 'react-redux'
+import { Button,Popup,Icon } from 'semantic-ui-react'
 import { withRouter } from 'react-router-dom'
+import { userTypes } from '../../store/constants'
+import { signInWithGoogle } from '../../firebase';
+import { auth } from '../../firebase';
+import * as LoginActions from '../../store/action'
 
 import Navbar from './components/Navbar'
 import WhoAreWe from './components/WhoAreWe'
 import JoinUs from './components/JoinUs'
 import ContactForm from './components/ContactForm'
-import Footer from '../common/Footer'
+import Footer from '../UI/Footer'
 import Launchpad from './components/Launchpad'
 import right from '../../resources/images/right.png'
 
@@ -51,19 +54,36 @@ export class Home extends Component {
 
                     <div className='Home__Begin__Buttons'>
                         <Button
-                            className='p-button-raised p-button-rounded'
-                            label='For Students'
-                            icon="pi pi-user"
-                            style={{marginRight:"20px"}}
+                            primary
+                            color="teal"
+                            style={{
+                                marginRight:"20px",
+                                borderRadius:"50px",
+                            }}
+                            onClick={()=> {
+                                this.props.setUserType({
+                                    userType : userTypes.STUDENT,
+                                })
+                                this.props.history.push('/login')
+                            }}
+                        >
+                            <Icon name="user outline"/>
+                            For Students
+                        </Button>
+                        <Popup
+                            content="Coming Soon!"
+                            inverted
+                            position="right center"
+                            trigger={
+                                <Button
+                                    color="purple"
+                                    style={{borderRadius:"50px"}}
+                                > 
+                                <Icon name="building outline"/>
+                                For Companies 
+                                </Button>
+                            }
                         />
-                        <Button
-                            className='p-button-raised p-button-rounded p-button-info'
-                            label="For Companies"
-                            icon="pi pi-building"
-                            disabled
-                            tooltip='Coming Soon'
-                            tooltipOptions={{position:"top"}}
-                        />  
                     </div>
                     
                 </div>
@@ -72,13 +92,6 @@ export class Home extends Component {
                 <JoinUs/>
 
                 <Launchpad/>
-
-                {/* <div className='Home__Lack'>
-                    There is a general lack of knowledge among students regarding startups, the way they work and the challenges they face. This is the main reason why students find it confusing and risky to join startups.
-                    <div className='Home__Lack--change'>
-                        We are here to break this thought process for once and for all.
-                    </div>
-                </div> */}
 
                 <div className='Home__Learn' onClick={()=>this.redirectToAbout()}>
                     Know more about us!
@@ -96,4 +109,16 @@ export class Home extends Component {
     }
 }
 
-export default withRouter(Home)
+const mapStateToProps = (state) => {
+    return {
+        state : state
+    }
+}
+
+const mapDispatchWithProps = (dispatch) => {
+    return {
+        setUserType : payload => dispatch(LoginActions.setUserType(payload))
+    }
+}
+
+export default connect(mapStateToProps,mapDispatchWithProps)(withRouter(Home))

@@ -1,6 +1,7 @@
 import React,{useState,useEffect,useRef} from 'react'
 import { Modal,Input,TextArea,Form,Button } from 'semantic-ui-react'
-import { toast } from 'react-toastify'
+// import { toast } from 'react-toastify'
+import toast from 'react-hot-toast'
 import emailjs from 'emailjs-com'
 import './ContactForm.scss'
 

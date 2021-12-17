@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 
 import Navbar from '../Home/components/Navbar'
-import Footer from '../common/Footer'
+import Footer from '../UI/Footer'
 import ContactForm from '../Home/components/ContactForm'
 import Advisors from './components/Advisors'
 import Founders from './components/Founders'
